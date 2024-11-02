@@ -19,11 +19,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 import * as config from '../config.mjs';
 
-import { Int } from '../module/int64.mjs';
-import { debug_log, die } from '../module/utils.mjs';
-import { Addr, mem } from '../module/mem.mjs';
-import { KB, MB } from '../module/constants.mjs';
-import { ChainBase } from '../module/chain.mjs';
+import { Int } from '../int64.mjs';
+import { debug_log, die } from '../utils.mjs';
+import { Addr, mem } from '../mem.mjs';
+import { KB, MB } from '../constants.mjs';
+import { ChainBase } from '../chain.mjs';
 
 import {
     make_buffer,
@@ -33,8 +33,8 @@ import {
     init_syscall_array,
 } from '../module/memtools.mjs';
 
-import * as rw from '../module/rw.mjs';
-import * as o from '../module/offset.mjs';
+import * as rw from '../rw.mjs';
+import * as o from '../offset.mjs';
 
 const origin = window.origin;
 const port = '8000';

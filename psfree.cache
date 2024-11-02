@@ -1,0 +1,21 @@
+CACHE MANIFEST
+
+alert.mjs
+cache.html
+chain.mjs
+config.mjs
+constants.mjs
+exploit.mjs
+goldhen.bin
+goldhen.png
+index.html
+int64.mjs
+mem.mjs
+memtools.mjs
+offset.mjs
+rw.mjs
+send.mjs
+utils.mjs
+
+NETWORK: 
+*
