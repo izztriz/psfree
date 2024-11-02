@@ -1,13 +1,16 @@
 CACHE MANIFEST
 
 alert.mjs
+btn.css
 cache.html
 chain.mjs
 config.mjs
 constants.mjs
+exploit.js
 exploit.mjs
 goldhen.bin
 goldhen.png
+icon.ico
 index.html
 int64.mjs
 mem.mjs
@@ -16,6 +19,3 @@ offset.mjs
 rw.mjs
 send.mjs
 utils.mjs
-
-NETWORK: 
-*
