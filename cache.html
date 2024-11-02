@@ -2,12 +2,76 @@
 <head>
 <title>GoldHen</title>
 <style>
-body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
-.info{position:relative;top:39%;}
+    .ico
+    {
+        width:100px;
+        display:block;
+        height:20px;
+        background:black;
+        color:white;
+        text-decoration:none;
+        padding-left:20px;
+    }
+
+    .ico:before
+    {
+        content: '';
+        background:url("icon.ico");
+        background-size:cover;
+        position:absolute;
+        width:20px;
+        height:20px;
+        margin-left:-20px;
+    }
+
+    body 
+    {
+        background-image: url("goldhen.png");
+        height: 80%;
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader 
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -75px 0 0 -75px;
+        border: 10px solid #1f1e1e;
+        border-radius: 50%;
+        border-top: 10px solid #09ff00;
+        border-left: 10px solid #09ff00;
+        width: 120px;
+        height: 120px;
+        animation: spin 1s linear infinite;
+    }
+
+    .info 
+    {
+        overflow: hidden;
+        position: fixed;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        font-size: 45px;
+        font-family: sans-serif;
+        color: #09ff00;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .j {
+        font-size: 15px;
+        color: #09ff00;
+    }
 </style>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="GoldHen Offline Cache ... " + Percent + "%"};
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="GoldHen Offline Cache... " + Percent + "%"};
 function DisplayCacheProgress(){
 setTimeout(function(){msgs.innerHTML="Cache Installed Successfully";},2000);
 setTimeout(function(){location.reload();},3000);

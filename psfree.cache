@@ -5,9 +5,10 @@ cache.html
 config.mjs
 exploit.js
 exploit.mjs
-favicon.ico
 index.html
 goldhen.bin
+goldhen.png
+icon.ico
 chain.mjs
 constants.mjs
 int64.mjs
