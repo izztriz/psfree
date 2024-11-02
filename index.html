@@ -1,11 +1,52 @@
 <html>
 <head>
-<title>Leeful 9.00 v5.0 PSFree [GoldHEN v2.4b18]</title>
-<link rel="shortcut icon" href="favicon.ico"></link>
-<link rel="stylesheet" href="btn.css">
+<title>GoldHen</title>
+<link rel="shortcut icon" href="icon.ico"></link>
 <style>
-body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
-.info{position:relative;top:39%;}
+    body 
+    {
+        background-image: url("goldhen.png");
+        height: 80%;
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader 
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -75px 0 0 -75px;
+        border: 10px solid #1f1e1e;
+        border-radius: 50%;
+        border-top: 10px solid #09ff00;
+        border-left: 10px solid #09ff00;
+        width: 120px;
+        height: 120px;
+        animation: spin 1s linear infinite;
+    }
+
+    .info 
+    {
+        overflow: hidden;
+        position: fixed;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        font-size: 45px;
+        font-family: sans-serif;
+        color: #09ff00;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .j {
+        font-size: 15px;
+        color: #09ff00;
+    }
 </style>
 
 <script>
@@ -18,7 +59,7 @@ async function webkitExploit()
 </head>
 <body onload="setTimeout(webkitExploit,1500);"><!--  -->
 <script src="exploit.js"></script>
-<div id="msgs" class="info">Running Webkit Exploit, Please Wait ...</div>
+<div id="msgs" class="info">Running Exploit, Please Wait ...</div>
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>

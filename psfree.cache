@@ -1,0 +1,18 @@
+CACHE MANIFEST 
+
+alert.mjs
+cache.html
+config.mjs
+exploit.js
+exploit.mjs
+favicon.ico
+index.html
+goldhen.bin
+chain.mjs
+constants.mjs
+int64.mjs
+mem.mjs
+memtools.mjs
+offset.mjs
+rw.mjs
+utils.mjs
